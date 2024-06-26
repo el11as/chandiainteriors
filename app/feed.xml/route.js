@@ -4,7 +4,7 @@ import { Feed } from 'feed'
 
 export async function GET(req) {
   // let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  let siteUrl = http://localhost:3000
+  let siteUrl = "http://localhost:3000"
 
 
   if (!siteUrl) {
