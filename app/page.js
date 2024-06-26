@@ -282,7 +282,7 @@ function InstagramSection() {
           {
             src: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/441546490_1685600132244455_6130428898489910517_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=aFtdW14uJ0wQ7kNvgHvtT1x&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCD6ltXdYZdJ6W0xpyTk78cOA1A0xZ7CJ-bG0cZt88t1A&oe=66825190",
             srcAlt: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/441546490_1685600132244455_6130428898489910517_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=aFtdW14uJ0wQ7kNvgHvtT1x&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCD6ltXdYZdJ6W0xpyTk78cOA1A0xZ7CJ-bG0cZt88t1A&oe=66825190",
-            alt: "2 puppies",
+            alt: "2 puppiess",
           },
         ].map((item, index) => (
           <div className="relative group" key={index}>
