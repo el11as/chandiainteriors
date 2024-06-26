@@ -240,7 +240,7 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+              'tive aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800rela',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -256,6 +256,84 @@ function Photos() {
     </div>
   )
 }
+
+function InstagramSection () {
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+
+  return (
+    <div className="mt-16 sm:mt-20">  
+        <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+          {[
+            {
+              src: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/446328916_976537393944627_5327280530272346949_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=18de74&_nc_ohc=VfbZCY7Qs8oQ7kNvgGfF98p&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYBE_trahX9I_9Ess7RUVVot8matl1ouCGHrfiKTj7ChNg&oe=66826F75",
+              srcAlt: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/446328916_976537393944627_5327280530272346949_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=18de74&_nc_ohc=VfbZCY7Qs8oQ7kNvgGfF98p&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYBE_trahX9I_9Ess7RUVVot8matl1ouCGHrfiKTj7ChNg&oe=66826F75",
+              alt: "A picture of a sitting dog",
+            },
+            {
+              src: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/436296820_966539878126363_6314978818471584380_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=m__o8GtiauAQ7kNvgEjxv8Y&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYA5kHtDeY0GS3pzW_Axf2EHD68zO2FRCw3XUeRBUE24gw&oe=66824E47",
+              srcAlt: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/436296820_966539878126363_6314978818471584380_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=m__o8GtiauAQ7kNvgEjxv8Y&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYA5kHtDeY0GS3pzW_Axf2EHD68zO2FRCw3XUeRBUE24gw&oe=66824E47",
+              alt: "Smiling Girl",
+            },
+            {
+              src: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/434127967_246203545154202_7186284280471110025_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=_96syXwbTsYQ7kNvgEoLWCm&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCMpuM8uCAM2_xoXbynYJgjJ2JGnnqzNXBnRsrb_qsH9Q&oe=66826558",
+              srcAlt: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/434127967_246203545154202_7186284280471110025_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=_96syXwbTsYQ7kNvgEoLWCm&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCMpuM8uCAM2_xoXbynYJgjJ2JGnnqzNXBnRsrb_qsH9Q&oe=66826558",
+              alt: "Men Posing",
+            },
+            {
+              src: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/441546490_1685600132244455_6130428898489910517_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=aFtdW14uJ0wQ7kNvgHvtT1x&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCD6ltXdYZdJ6W0xpyTk78cOA1A0xZ7CJ-bG0cZt88t1A&oe=66825190",
+              srcAlt: "https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/441546490_1685600132244455_6130428898489910517_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=aFtdW14uJ0wQ7kNvgHvtT1x&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCD6ltXdYZdJ6W0xpyTk78cOA1A0xZ7CJ-bG0cZt88t1A&oe=66825190",
+              alt: "2 puppies",
+            },
+          ].map((item, index) => (
+            <div className="relative group">
+              <div
+                  key={item.src}
+                  alt={item.alt}
+                  className={clsx(
+                    'tive aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800rela',
+                    rotations[index % rotations.length],
+                  )}
+                >
+                  <img
+                    src={item.src}
+                    alt=""
+                    sizes="(min-width: 640px) 18rem, 11rem"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+
+              <div className="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full" />
+                <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+                  <svg width={64} height={64} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M42.6665 10.6665H21.3332C15.4421 10.6665 10.6665 15.4421 10.6665 21.3332V42.6665C10.6665 48.5575 15.4421 53.3332 21.3332 53.3332H42.6665C48.5575 53.3332 53.3332 48.5575 53.3332 42.6665V21.3332C53.3332 15.4421 48.5575 10.6665 42.6665 10.6665Z"
+                      stroke="white"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M32 40C36.4183 40 40 36.4183 40 32C40 27.5817 36.4183 24 32 24C27.5817 24 24 27.5817 24 32C24 36.4183 27.5817 40 32 40Z"
+                      stroke="white"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M44 20V20.001"
+                      stroke="white"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          ))}
+       </div>
+    </div>
+  );
+};
 
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
@@ -304,6 +382,20 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+
+      <Container className="mt-9">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          Follow Us on Instagram
+          </h1>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            Follow us on instagram @
+            <span className="underline cursor-pointer">chandia.interiors</span> and tag us to get featured on our timeline
+          </p>
+        </div>
+      </Container>
+
+      <InstagramSection/>
     </>
   )
 }
